@@ -38,6 +38,16 @@ YC_LOCKBOX_SECRET_ID=e6q56ut7fm21873uu3ai
 S3_BUCKET_NAME=dontsueme-bucket5
 S3_BUCKET_FOLDER=reports
 S3_METADATA_FILENAME=metadata.json
+
+OIDC_ENABLED=True
+OIDC_BUTTON_NAME=OIDC
+OIDC_CLIENT_ID=dontsueme-app
+OIDC_CLIENT_SECRET=Z1vtJ8gi1gpMUFaJjXObtr72y3PNy9Hu
+OIDC_SIGN_ALGO=RS256
+OIDC_AUTHORIZATION_ENDPOINT=https://keycloak.51.250.74.213.sslip.io/realms/master/protocol/openid-connect/auth
+OIDC_TOKEN_ENDPOINT=https://keycloak.51.250.74.213.sslip.io/realms/master/protocol/openid-connect/token
+OIDC_USER_ENDPOINT=https://keycloak.51.250.74.213.sslip.io/realms/master/protocol/openid-connect/userinfo
+OIDC_JWKS_ENDPOINT=https://keycloak.51.250.74.213.sslip.io/realms/master/protocol/openid-connect/certs
 EOF
 
 # Create systemd unit file to run dontsueme docker container
