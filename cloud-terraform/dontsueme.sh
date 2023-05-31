@@ -32,6 +32,12 @@ DB_DIR=/data
 DEFAULT_SUPERUSER_NAME=dontsueme
 DEFAULT_SUPERUSER_EMAIL=dont@sue.me
 DEFAULT_SUPERUSER_PASSWORD=dontsueme
+
+IAM_TOKEN_URL=http://169.254.169.254/computeMetadata/v1/instance/service-accounts/default/token
+YC_LOCKBOX_SECRET_ID=e6q56ut7fm21873uu3ai
+S3_BUCKET_NAME=dontsueme-bucket5
+S3_BUCKET_FOLDER=reports
+S3_METADATA_FILENAME=metadata.json
 EOF
 
 # Create systemd unit file to run dontsueme docker container
